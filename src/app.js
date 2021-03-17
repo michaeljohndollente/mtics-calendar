@@ -111,10 +111,10 @@ app.post('/', (req, res) => {
 app.post('/events',(req,res)=>{
     const {google} = require('googleapis')
     const {OAuth2} = google.auth
-    const oAuth2Client = new oauth2(calendar id, client secret)
+    // const oAuth2Client = new oauth2(calendar id, client secret) //still not done in the tutorial
 
     oAuth2Client.setCredentials({
-        refresh_token: your refresh token;
+        // refresh_token: your refresh token; //tutorial not working
     })
 
     const calendar = google.calendar({version: 'v3', auth: oAuth2Client})
@@ -184,4 +184,5 @@ app.post('/events',(req,res)=>{
 })
 
 app.listen(3000, () => {
-    console.log('Server 
+    console.log('Server on port 3000')
+})
