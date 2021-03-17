@@ -1,0 +1,21 @@
+{
+  "name": "mtics-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev":"env-cmd -f ./config/dev.env node src/app.js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "ejs": "^3.1.6",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "googleapis": "^67.1.1"
+  }
+}
